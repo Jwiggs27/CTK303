@@ -1,0 +1,31 @@
+body{
+background-color: #1A1A1D;
+color: white;
+}
+
+h1{
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: #a8329e;
+}
+
+main p{
+font-family: 'Righteous', cursive;
+text-align: justify;
+font-size: 20px;
+margin: 10px;
+padding: 10px;
+color:#fce03f
+}
+
+.Calender{
+  width: 560px;
+  height: 315px;
+}
+
+footer{
+  font-size: 12px;
+  font-family:'Righteous', cursive;
+  color: #fce03f
+}
