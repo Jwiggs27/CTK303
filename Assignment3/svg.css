@@ -1,0 +1,32 @@
+body {
+  background-color: #1A1A1D;
+}
+
+#SVGlogo {
+  width: 500px;
+  display:block;
+  transition: transform .50s linear;
+  transform-origin: left top;
+}
+
+#SVGlogo:hover {
+  transform: scale(1.1);
+}
+
+#J {
+  animation: Jfade 2.0s;
+}
+
+@keyframes Jfade {
+  0%   { transform: translate(0, -200px);}
+ 100% { transform: translate(0, 0);}
+}
+
+#W {
+  animation: Wfade 2.0s;
+}
+
+@keyframes Wfade {
+  0%   { transform: translate(0, 200px);}
+ 100% { transform: translate(0, 0);}
+}
