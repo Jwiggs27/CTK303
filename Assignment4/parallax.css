@@ -42,3 +42,31 @@ html, body{
   transform: translate(-50%,0);
   pointer-events: none
 }
+
+#SVGlogo {
+  position: absolute;
+  right: 500px;
+  width: 500px;
+  display:block;
+  transition: transform .50s linear;
+  transform-origin: left top;
+}
+
+
+#J {
+  animation: Jfade 2.0s;
+}
+
+@keyframes Jfade {
+  0%   { transform: translate(0, -200px);}
+ 100% { transform: translate(0, 0);}
+}
+
+#W {
+  animation: Wfade 2.0s;
+}
+
+@keyframes Wfade {
+  0%   { transform: translate(0, 200px);}
+ 100% { transform: translate(0, 0);}
+}
