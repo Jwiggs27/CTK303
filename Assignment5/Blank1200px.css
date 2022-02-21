@@ -1,0 +1,185 @@
+body {
+  background-color: #1A1A1D;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+.txtbox {
+  color: black;
+}
+
+
+nav {
+  grid-column: span 12;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: 'Righteous', cursive;
+  border: 3px solid transparent;
+  transition: border 1.0s;
+
+}
+
+nav li a:hover {
+  border: 3px solid #950740;
+  width: 100%;
+}
+
+.logo {
+  height: 100px;
+}
+
+main {
+  grid-column: span 12;
+  font-family: 'Righteous', cursive;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 52px;
+  padding: 50px;
+}
+
+main img {
+  width: 100%;
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+  display: none;
+
+}
+
+.inline {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url("DarthJake.jpg") no-repeat top center;
+    background-size: cover;
+    text-align: right;
+    height: 400px;
+    padding-right: 20px;
+    border-radius: 100px;
+}
+
+.Hello {
+  font-weight: normal;
+  font-size: 32px;
+
+}
+
+.Learnmore {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.aboutme {
+  font-family: 'Righteous', cursive;
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-right: 50px;
+  padding: 20px;
+  text-align:left;
+}
+
+h1 {
+  font-size: 40px;
+  border-bottom: 3px solid #950740;
+}
+
+main a {
+  color: #950740;
+  text-decoration: none;
+}
+
+main a:hover {
+  padding: 10px 20px;
+  transition: padding 1.0s;
+}
+
+aside {
+  grid-column: span 12;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+form {
+  width: 75%;
+}
+
+.carousel {
+  color: #950740;
+
+  --carousel-button-bg: #fff;
+  --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0
+          0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+.carousel__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+  height: 540px;
+  margin-right: 32px;
+
+  background-color: #282828;
+  border-radius: 6px;
+}
+
+
+footer {
+    grid-column: span 12;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+footer a {
+  color: #950740;
+  text-decoration: none;
+  font-size: 32px;
+  transition: color 1.0s;
+  padding: 14px;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
+@media all and (min-width: 30rem){
+nav li {width: 100%}
+nav { grid-template-columns: 4fr }
+main img {width: 50%; display: inline-block}
+
+
+}
+
+@media all and (min-width: 50rem){
+  nav li {width: 200px}
+nav { grid-template-columns: 4fr }
+main img {width: 50%}
+}
